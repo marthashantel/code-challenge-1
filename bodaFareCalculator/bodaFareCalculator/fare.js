@@ -1,13 +1,21 @@
-function calculateBodaFare() {
+// function declaration
+
+functioncalculateBodaFare()
+// user input and declaration 
+
+{
     let distanceInKm = Number(prompt("Unafika wapi Mkubwa? Kilometer ngapi?"));
+    // input validation 
 
     if (isNaN(distanceInKm) || distanceInKm < 0) {
         console.log("Please enter a valid distance in kilometers!");
         return;
     }
+    // defining fare rates
 
-    const baseFare = 50; 
-    const chargePerKm = 15; 
+    const baseFare = 50;
+    const chargePerKm = 15;
+    //calculating the fare 
 
     let distanceFare = distanceInKm * chargePerKm;
     let totalFare = baseFare + distanceFare;

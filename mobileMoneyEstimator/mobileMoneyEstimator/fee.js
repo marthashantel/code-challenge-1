@@ -1,5 +1,5 @@
 function estimateTransactionFee() {
-    let amountToSend = Number(prompt("Unatuma Ngapi? (KES)"));
+    let amountToSend = Number(prompt("Unatuma Ngapi? (KES)"));// asks user for amount to send
 
     if (isNaN(amountToSend) || amountToSend < 0) {
         console.log("Please enter a valid amount!");
@@ -18,4 +18,4 @@ function estimateTransactionFee() {
     console.log("\nSend Money Securely!");
 }
 
-estimateTransactionFee();
+estimateTransactionFee();// calls the function to execute the fee estimation 
